@@ -18,6 +18,7 @@ int led = 10;
 void setup() {
   // put your setup code here, to run once:
   pinMode(led, OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -25,123 +26,214 @@ void loop() {
   char key = keypad.getKey();
 
   if (key == '0') {
+    Serial.println(key);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '1') {
+    Serial.println("1");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '2') {
+    Serial.println("2");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '3') {
+    Serial.println("3");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '4') {
+    Serial.println("4");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '5') {
+    Serial.println("5");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '6') {
+    Serial.println("6");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '7') {
+    Serial.println("7");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '8') {
+    Serial.println("8");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
   if (key == '9') {
+    Serial.println("9");
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
+    delay(300);
     digitalWrite(led, HIGH);
+    delay(300);
     digitalWrite(led, LOW);
     delay(300);
   }
