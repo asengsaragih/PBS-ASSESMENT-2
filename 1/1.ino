@@ -11,28 +11,33 @@ void setup() {
   pinMode(pushButton, INPUT);
 
   digitalWrite(pushButton, HIGH);
-
-//  digitalWrite(led1, HIGH);
-//  digitalWrite(led2, HIGH);
-//  digitalWrite(led3, HIGH);
 }
 
 void loop() {
   if (digitalRead(pushButton) == LOW) {
     for (int i = 0; i <= 255; i+=5) {
       analogWrite(led1, i);
-      analogWrite(led2, i);
-      analogWrite(led3, i);
-
-      delay(100);
     }
-
+    delay(200);
     for (int i = 255; i >= 0; i-=5) {
       analogWrite(led1, i);
-      analogWrite(led2, i);
-      analogWrite(led3, i);
-
-      delay(100);
     }
+    delay(200);
+    for (int i = 0; i <= 255; i+=5) {
+      analogWrite(led2, i);
+    }
+    delay(200);
+    for (int i = 255; i >= 0; i-=5) {
+      analogWrite(led2, i);
+    }
+    delay(200);
+    for (int i = 0; i <= 255; i+=5) {
+      analogWrite(led3, i);
+    }
+    delay(200);
+    for (int i = 255; i >= 0; i-=5) {
+      analogWrite(led3, i);
+    }
+    delay(200);
   }
 }
