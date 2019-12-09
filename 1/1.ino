@@ -18,8 +18,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
   if (digitalRead(pushButton) == LOW) {
     for (int i = 0; i <= 255; i+=5) {
       analogWrite(led1, i);
